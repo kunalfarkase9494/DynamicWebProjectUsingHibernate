@@ -23,7 +23,7 @@ public class Launch1 extends HttpServlet{
 		String salary = req.getParameter("usalary");
 		
 		Session s = ConnectionFactory.getSession();
-		
+		//creating Employee object and Initialize it.
 		Employee e = new Employee();
 		e.setId(Integer.valueOf(id));
 		e.setName(name);
